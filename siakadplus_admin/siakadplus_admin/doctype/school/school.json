@@ -7,6 +7,8 @@
  "field_order": [
   "school_section",
   "name_school",
+  "domain",
+  "active",
   "school_admin_section",
   "email",
   "password",
@@ -47,12 +49,23 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Data",
+   "label": "Domain"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-16 10:21:39.993689",
+ "modified": "2024-06-16 17:19:42.272323",
  "modified_by": "Administrator",
  "module": "Siakadplus Admin",
  "name": "School",

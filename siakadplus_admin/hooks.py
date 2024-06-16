@@ -122,6 +122,12 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "School": {
+        "on_submit": "siakadplus_admin.siakadplus_admin.doctype.school.school.on_submit_school"
+    }
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
