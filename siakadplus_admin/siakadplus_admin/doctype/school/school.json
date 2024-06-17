@@ -12,7 +12,9 @@
   "school_admin_section",
   "email",
   "password",
-  "amended_from"
+  "amended_from",
+  "backup_section",
+  "school_backup"
  ],
  "fields": [
   {
@@ -60,12 +62,23 @@
    "fieldname": "active",
    "fieldtype": "Check",
    "label": "Active"
+  },
+  {
+   "fieldname": "backup_section",
+   "fieldtype": "Section Break",
+   "label": "Backup"
+  },
+  {
+   "fieldname": "school_backup",
+   "fieldtype": "Table",
+   "label": "School Backup",
+   "options": "School Backup"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-16 17:19:42.272323",
+ "modified": "2024-06-16 23:27:43.239671",
  "modified_by": "Administrator",
  "module": "Siakadplus Admin",
  "name": "School",
