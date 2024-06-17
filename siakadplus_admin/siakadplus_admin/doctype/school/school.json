@@ -9,10 +9,10 @@
   "name_school",
   "domain",
   "active",
+  "file_backup",
   "school_admin_section",
   "email",
   "password",
-  "amended_from",
   "backup_section",
   "school_backup"
  ],
@@ -43,16 +43,6 @@
    "label": "Password"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "School",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "domain",
    "fieldtype": "Data",
    "label": "Domain"
@@ -73,12 +63,17 @@
    "fieldtype": "Table",
    "label": "School Backup",
    "options": "School Backup"
+  },
+  {
+   "fieldname": "file_backup",
+   "fieldtype": "Attach",
+   "label": "Import from Backup",
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-06-16 23:27:43.239671",
+ "modified": "2024-06-17 16:50:13.359553",
  "modified_by": "Administrator",
  "module": "Siakadplus Admin",
  "name": "School",

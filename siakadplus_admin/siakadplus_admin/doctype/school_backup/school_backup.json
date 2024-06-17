@@ -15,6 +15,7 @@
    "fieldname": "download",
    "fieldtype": "Button",
    "in_list_view": 1,
+   "in_preview": 1,
    "label": "Download"
   },
   {
@@ -27,14 +28,14 @@
    "fieldname": "file_size",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Size",
+   "label": "Size (KB)",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-06-16 23:36:18.477562",
+ "modified": "2024-06-17 13:53:50.444489",
  "modified_by": "Administrator",
  "module": "Siakadplus Admin",
  "name": "School Backup",

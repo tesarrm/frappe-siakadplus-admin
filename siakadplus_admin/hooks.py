@@ -124,11 +124,9 @@ app_license = "mit"
 
 doc_events = {
     "School": {
-        "on_submit": "siakadplus_admin.siakadplus_admin.doctype.school.school.on_submit_school"
+        "before_save": "siakadplus_admin.siakadplus_admin.doctype.school.school.on_submit_school",
+        "on_trash": "siakadplus_admin.siakadplus_admin.doctype.school.school.delete_site"
     },
-    "School Backup": {
-        "download": "siakadplus_admin.siakadplus_admin.doctype.school.school.download_backup"
-    }
 }
 
 # doc_events = {
