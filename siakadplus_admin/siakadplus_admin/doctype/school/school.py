@@ -78,7 +78,7 @@ def on_submit_school(doc, method):
 		path = doc.file_backup
 		restore_backup(site_name, path)
     
-	elif not doc.file_backup:
+	elif not os.path.exists(site_path) and not doc.file_backup:
 		# Step 1: Create a new site
 		create_site_command = f"bench new-site {site_name} --mariadb-root-password root --admin-password {admin_password} --db-name db-siakadplus-{domain}"
 		subprocess.run(create_site_command, shell=True, check=True)
@@ -87,7 +87,7 @@ def on_submit_school(doc, method):
 		install_app_command = f"bench --site {site_name} install-app siakadplus"
 		subprocess.run(install_app_command, shell=True, check=True)
 
-		# Step 5: Restart Bench
+		# Step 3: Restart Bench
 		restart_bench_command = "bench restart"
 		subprocess.run(restart_bench_command, shell=True, check=True)
 
